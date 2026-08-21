@@ -100,3 +100,39 @@ h2 {
     color: #aaa;
     font-size: 14px;
 }
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 20px;
+        border-right: none;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+    .sidebar h1 {
+        margin-bottom: 20px;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+    }
+}
