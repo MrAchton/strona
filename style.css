@@ -22,10 +22,11 @@ body {
 }
 
 .logo a {
-    font-size: 20px;
-    letter-spacing: 4px;
-    font-weight: 400;
-    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 26px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: none;
     text-decoration: none;
     color: #000;
     cursor: pointer;
@@ -99,6 +100,70 @@ h2 {
     display: block;
 }
 
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group-row .form-group {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group label span {
+    font-size: 13px;
+    color: #777;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #000;
+}
+
+.submit-btn {
+    background: transparent;
+    border: 2px solid #000;
+    padding: 15px 40px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
 @media (max-width: 900px) {
     .top-bar {
         flex-direction: column;
@@ -114,5 +179,12 @@ h2 {
     
     .hero-image {
         height: 40vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-group-row {
+        flex-direction: column;
+        gap: 0;
     }
 }
