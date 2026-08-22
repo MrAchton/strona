@@ -75,11 +75,11 @@
                 <div class="gallery-item"><img src="1000008854.JPG" alt="Kawiarnia nocą"></div>
                 <div class="gallery-item"><img src="DSC_5847.jpg" alt="Wiatrak"></div>
             </div>
-        </section>
-
-        <section id="kontakt" class="sekcja-strony">
+        </section>        <section id="kontakt" class="sekcja-strony">
             <h2>Kontakt</h2>
-            <form action="mailto:jboczkowski@icloud.com" method="POST" enctype="text/plain" class="contact-form">
+            <form action="https://formsubmit.co/TWOJ_ADRES_EMAIL@DOMENA.PL" method="POST" class="contact-form">
+                <input type="hidden" name="_captcha" value="false">
+                
                 <div class="form-group-row">
                     <div class="form-group">
                         <label for="first-name">Imię <span>(wymagane)</span></label>
@@ -89,6 +89,11 @@
                         <label for="last-name">Nazwisko <span>(wymagane)</span></label>
                         <input type="text" id="last-name" name="Nazwisko" required>
                     </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="number">Numer telefonu <span>(wymagane)</span></label>
+                    <input type="tel" id="number" name="Telefon" required>
                 </div>
                 
                 <div class="form-group">
@@ -101,19 +106,12 @@
                     <textarea id="message" name="Wiadomość" rows="5" required></textarea>
                 </div>
 
-                <div class="form-group">
-                    <label for="number">Numer telefonu <span>(wymagane)</span></label>
-                    <input type="tel" id="number" name="Telefon" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="social">Profil w social mediach <span>(wymagane)</span></label>
-                    <input type="text" id="social" name="Social_Media" required>
-                </div>
-
                 <button type="submit" class="submit-btn">WYŚLIJ</button>
             </form>
         </section>
+
+
+
     </main>
 
     <script>
