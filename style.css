@@ -242,4 +242,22 @@ h2 {
     position: relative;
 }
 
+.site-footer {
+    background-color: #d4c4b7;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.social-icon {
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.social-icon:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
 
