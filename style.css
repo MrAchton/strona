@@ -156,8 +156,10 @@ h2 {
     text-transform: uppercase;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
-    margin-top: 10px;
+    display: block;
+    margin: 30px auto 0 auto;
 }
+
 
 .submit-btn:hover {
     background: #000;
