@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -188,3 +188,58 @@ h2 {
         gap: 0;
     }
 }
+   .about-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.typewriter-text {
+    overflow: hidden;
+    border-right: 2px solid #000;
+    white-space: nowrap;
+    margin: 0 auto 30px auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: bold;
+    width: 17ch;
+    animation: typing 2s steps(17, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 17ch }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #000 }
+}
+
+.about-lead {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.about-traits-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about-traits {
+    list-style: none;
+    padding: 0;
+}
+
+.about-traits li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+    position: relative;
+}
+
+
